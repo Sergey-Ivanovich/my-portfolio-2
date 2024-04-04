@@ -120,7 +120,8 @@ hr.gradient-line {
   }
 
   nav {
-    padding: 22px 0px;
+    justify-content: center;
+    padding: 23px 0px;
   }
 }
 
