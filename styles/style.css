@@ -115,7 +115,8 @@ hr.gradient-line {
     display: none;
   }
 
-  .mobile-show {
+  header {
+    padding: 120px 0px 40px;
   }
 
   nav {
