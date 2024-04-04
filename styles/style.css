@@ -125,6 +125,12 @@ hr.gradient-line {
   }
 }
 
+@media (max-width: 305px) {
+  nav a {
+    font-size: 10px;
+  }
+}
+
 @media (min-width: 960px) {
   .mobile-show {
     display: none;
