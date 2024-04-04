@@ -114,4 +114,13 @@ hr.gradient-line {
   .mobile {
     display: none;
   }
+
+  .mobile-show {
+  }
+}
+
+@media (min-width: 960px) {
+  .mobile-show {
+    display: none;
+  }
 }
