@@ -32,6 +32,14 @@ header {
   background-color: rgba(0, 255, 255, 0.3);
 }
 
+header h2 {
+  line-height: 1.5em;
+}
+
+header h3 {
+  font-size: 15px;
+}
+
 a {
   text-decoration: none;
   padding: 10px;
@@ -62,6 +70,12 @@ hr.gradient-line {
   font-size: 20px;
 }
 
+.visible {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
 .contact-btn {
   vertical-align: middle;
   font-size: 18px;
@@ -69,6 +83,15 @@ hr.gradient-line {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+}
+
+.contact-container {
+  border-radius: 5px;
+  transition: all 150ms ease-in-out;
+}
+
+.contact-container:hover {
+  background-color: #00eeff6f;
 }
 
 .arrow {
@@ -85,4 +108,10 @@ hr.gradient-line {
 
 .hide {
   opacity: 0;
+}
+
+@media (max-width: 960px) {
+  .mobile {
+    display: none;
+  }
 }
