@@ -4,6 +4,7 @@ html {
 
 :root {
   --main-gradient: linear-gradient(90deg, #00f0ff, #020055);
+  --secondary-gradient: linear-gradient(270deg, #0500ff, #00f0ff);
 }
 
 nav {
@@ -64,4 +65,24 @@ hr.gradient-line {
 .contact-btn {
   vertical-align: middle;
   font-size: 18px;
+  background-image: var(--secondary-gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.arrow {
+  top: 90px;
+  right: 60px;
+  position: fixed;
+  width: 30px;
+  transition: all 950ms ease-in-out;
+}
+
+.bounce {
+  transform: translateY(50%);
+}
+
+.hide {
+  opacity: 0;
 }
