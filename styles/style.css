@@ -3,7 +3,9 @@ html {
 }
 
 :root {
+  --aqua: rgb(213, 254, 255);
   --main-gradient: linear-gradient(90deg, #00f0ff, #020055);
+  --main-gradient-vertical: linear-gradient(#00f0ff, #020055);
   --secondary-gradient: linear-gradient(270deg, #0500ff, #00f0ff);
 }
 
@@ -41,9 +43,6 @@ header h3 {
 }
 
 .main-header {
-  border-radius: 10px;
-  padding: 10px;
-  background-color: rgba(0, 255, 255, 0.3);
   opacity: 1;
 }
 
@@ -120,6 +119,19 @@ hr.gradient-line {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(90deg, purple, blue);
+}
+
+.gradient-container {
+  border-left: -5px;
+  background-image: var(--main-gradient-vertical);
+  border-radius: 10px 100px 100px 10px;
+}
+
+.content-container {
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 0px 10px 10px 0px;
+  background-color: var(--aqua);
 }
 
 .underline {
