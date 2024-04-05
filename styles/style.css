@@ -48,7 +48,7 @@ header h3 {
 }
 
 main {
-  padding: 20px 80px;
+  padding: 20px 40px;
 }
 
 main h2 {
@@ -135,7 +135,14 @@ hr.gradient-line {
   background-color: var(--aqua);
 }
 
-.special-data {
+.aqua-container {
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--aqua);
+}
+
+/* .special-data {
   gap: 20px;
   vertical-align: middle;
   display: flex;
@@ -151,15 +158,15 @@ hr.gradient-line {
 .special-data img {
   border-radius: 10px;
   max-width: 200px;
+} 
+.special-data-link {
+    margin-top: auto !important;
 }
+*/
 
 .underline {
   font-weight: bold;
   text-decoration: underline;
-}
-
-.special-data-link {
-  margin-top: auto !important;
 }
 
 .nav-container hr.gradient-line {
@@ -258,25 +265,31 @@ hr.gradient-line {
     padding: 0px 20px;
   }
 
-  .special-data {
+  /* .special-data {
     border-radius: 0px;
     margin-right: -20px;
   }
 
   .special-data img {
     display: none;
-  }
+  } 
+  .special-data {
+      margin-left: -20px;
+    }
+    
+    .special-data-link {
+        display: none;
+    }
+    
 
   a.expandable-link {
     display: none !important;
-  }
+  }*/
+}
 
-  .special-data {
-    margin-left: -20px;
-  }
-
-  .special-data-link {
-    display: none;
+@media (max-width: 767px) {
+  .responsive-mb {
+    margin-bottom: 10px;
   }
 }
 
