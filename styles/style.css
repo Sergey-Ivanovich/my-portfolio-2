@@ -41,7 +41,7 @@ header h3 {
 }
 
 main {
-  padding: 500px 0px;
+  padding: 0px 0px;
 }
 
 footer {
@@ -88,6 +88,17 @@ hr.gradient-line {
   opacity: 1;
   border: none;
   background-image: var(--main-gradient);
+}
+
+.gradient-text {
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(90deg, purple, blue);
+}
+
+.underline {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .nav-container hr.gradient-line {
@@ -142,6 +153,10 @@ hr.gradient-line {
 
 .contact-container:hover {
   background-color: #00eeff6f;
+}
+
+.contact-active {
+  background-image: linear-gradient(90deg, aqua, rgb(0, 255, 0));
 }
 
 .arrow {
