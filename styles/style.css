@@ -27,7 +27,7 @@ nav a:hover {
 }
 
 header {
-  padding: 200px 0px;
+  padding: 250px 0px;
   text-align: center;
   background-color: rgba(0, 255, 255, 0.3);
 }
@@ -40,8 +40,18 @@ header h3 {
   font-size: 15px;
 }
 
+.main-header {
+  padding: 20px 80px;
+  background-color: rgb(255, 255, 255);
+  opacity: 1;
+}
+
 main {
   padding: 0px 0px;
+}
+
+main h2 {
+  line-height: 2em;
 }
 
 footer {
@@ -79,6 +89,21 @@ a.active-page {
   text-decoration: overline;
   color: blue;
   font-weight: bold;
+}
+
+a.expandable-link {
+  margin-top: -20px;
+  gap: 10px;
+  padding: 0px;
+  color: black;
+  transition: all 150ms ease-in-out;
+  display: flex;
+}
+
+a.expandable-link:hover {
+  color: #020055;
+  gap: 20px;
+  text-decoration: none;
 }
 
 hr.gradient-line {
@@ -191,6 +216,14 @@ hr.gradient-line {
 
   h3 {
     font-size: 10px !important;
+  }
+
+  .main-header {
+    padding: 0px 30px;
+  }
+
+  a.expandable-link {
+    display: none !important;
   }
 }
 
