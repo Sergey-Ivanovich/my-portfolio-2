@@ -150,12 +150,16 @@ hr.gradient-line {
 
 .special-data img {
   border-radius: 10px;
-  max-width: 500px;
+  max-width: 200px;
 }
 
 .underline {
   font-weight: bold;
   text-decoration: underline;
+}
+
+.special-data-link {
+  margin-top: auto !important;
 }
 
 .nav-container hr.gradient-line {
@@ -269,6 +273,10 @@ hr.gradient-line {
 
   .special-data {
     margin-left: -20px;
+  }
+
+  .special-data-link {
+    display: none;
   }
 }
 
