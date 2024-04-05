@@ -29,6 +29,7 @@ nav a:hover {
 }
 
 header {
+  border-bottom: 2px solid black;
   padding: 150px 0px 100px;
   text-align: center;
   background-color: rgba(0, 255, 255, 0.3);
@@ -134,6 +135,24 @@ hr.gradient-line {
   background-color: var(--aqua);
 }
 
+.special-data {
+  gap: 20px;
+  vertical-align: middle;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  border-radius: 0px 10px 10px 0px;
+  background-color: var(--aqua);
+  margin-left: -80px;
+  margin-bottom: 20px;
+}
+
+.special-data img {
+  border-radius: 10px;
+  max-width: 500px;
+}
+
 .underline {
   font-weight: bold;
   text-decoration: underline;
@@ -235,8 +254,21 @@ hr.gradient-line {
     padding: 0px 20px;
   }
 
+  .special-data {
+    border-radius: 0px;
+    margin-right: -20px;
+  }
+
+  .special-data img {
+    display: none;
+  }
+
   a.expandable-link {
     display: none !important;
+  }
+
+  .special-data {
+    margin-left: -20px;
   }
 }
 
