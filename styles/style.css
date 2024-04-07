@@ -92,6 +92,25 @@ a.active-page {
   font-weight: bold;
 }
 
+.project-element a:hover {
+  text-decoration: none;
+}
+
+.project-element button {
+  color: white;
+  display: block;
+  border-radius: 40px;
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  background-image: var(--main-gradient);
+  transition: all 150ms ease-in-out;
+}
+
+.project-element button:hover {
+  color: black;
+}
+
 a.expandable-link {
   gap: 10px;
   padding: 0px;
