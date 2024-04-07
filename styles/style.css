@@ -116,6 +116,10 @@ hr.gradient-line {
   background-image: var(--main-gradient);
 }
 
+.img-grid img {
+  border: 2px solid black;
+}
+
 .gradient-text {
   background-clip: text;
   -webkit-text-fill-color: transparent;
