@@ -146,6 +146,21 @@ hr.gradient-line {
   background-color: var(--aqua);
 }
 
+.fluid-gradient-container {
+  height: 100%;
+  border-left: -5px;
+  background-image: var(--main-gradient-vertical);
+  border-radius: 10px 100px 100px 10px;
+}
+
+.fluid-content-container {
+  height: 100%;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 0px 10px 10px 0px;
+  background-color: var(--aqua);
+}
+
 .aqua-container {
   height: 100%;
   padding: 10px;
@@ -156,6 +171,10 @@ hr.gradient-line {
 .small-desc {
   text-align: center;
   font-size: 15px;
+}
+
+.round-img {
+  border-radius: 10px;
 }
 
 /* .special-data {
@@ -183,6 +202,10 @@ hr.gradient-line {
 .underline {
   font-weight: bold;
   text-decoration: underline;
+}
+
+.sm-lineh {
+  line-height: 1.25em;
 }
 
 .nav-container hr.gradient-line {
