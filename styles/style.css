@@ -117,7 +117,14 @@ hr.gradient-line {
 }
 
 .img-grid img {
+  border-radius: 10px;
   border: 2px solid black;
+  margin-bottom: 10px;
+  transition: all 150ms ease-in-out;
+}
+
+.img-grid img:hover {
+  transform: scale(1.3);
 }
 
 .gradient-text {
@@ -144,6 +151,11 @@ hr.gradient-line {
   padding: 10px;
   border-radius: 10px;
   background-color: var(--aqua);
+}
+
+.small-desc {
+  text-align: center;
+  font-size: 15px;
 }
 
 /* .special-data {
@@ -294,6 +306,10 @@ hr.gradient-line {
 @media (max-width: 767px) {
   .responsive-mb {
     margin-bottom: 10px;
+  }
+
+  .img-grid img:hover {
+    transform: none;
   }
 }
 
