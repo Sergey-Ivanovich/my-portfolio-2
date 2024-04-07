@@ -93,7 +93,6 @@ a.active-page {
 }
 
 a.expandable-link {
-  margin-top: -20px;
   gap: 10px;
   padding: 0px;
   color: black;
@@ -324,6 +323,12 @@ hr.gradient-line {
   a.expandable-link {
     display: none !important;
   }*/
+}
+
+@media (max-width: 992px) {
+  .lg-responsive-mb {
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 767px) {
