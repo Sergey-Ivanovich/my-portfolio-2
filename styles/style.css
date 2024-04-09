@@ -198,6 +198,12 @@ hr.gradient-line {
   border-radius: 10px;
 }
 
+.vertical-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 /* .special-data {
   gap: 20px;
   vertical-align: middle;
