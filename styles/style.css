@@ -92,6 +92,11 @@ a.active-page {
   font-weight: bold;
 }
 
+.ability-icons {
+  padding-top: 20px;
+  font-size: 40px;
+}
+
 .project-element a:hover {
   text-decoration: none;
 }
