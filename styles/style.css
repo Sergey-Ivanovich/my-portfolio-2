@@ -372,6 +372,11 @@ hr.gradient-line {
     padding: 0px 20px;
   }
 
+  .warning-pop-up::after {
+    max-width: 80vw;
+    overflow: hidden;
+  }
+
   /* .special-data {
     border-radius: 0px;
     margin-right: -20px;
