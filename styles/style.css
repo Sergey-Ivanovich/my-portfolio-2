@@ -314,6 +314,42 @@ hr.gradient-line {
   opacity: 0;
 }
 
+.background-img-container {
+  display: block;
+  margin: auto;
+  border-radius: 20px;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: red;
+  border: 2px solid white;
+  background-repeat: no-repeat;
+  background-size: 110%;
+  background-image: url(../images/new-port.png);
+}
+
+.warning-pop-up::after {
+  content: "Page Is Under Construction, Expect Bugs And Instability";
+  transition: all 200ms ease-in-out;
+  position: absolute;
+  margin-top: -10px;
+  padding: 10px 20px;
+  background-color: transparent;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-right: -250px;
+  opacity: 0;
+  transform: translatey(-10px);
+  filter: blur(2px);
+}
+
+.warning-pop-up:hover::after {
+  transform: translatey(0px);
+  opacity: 1;
+  filter: none;
+}
+
 @media (max-width: 960px) {
   .mobile {
     display: none;
