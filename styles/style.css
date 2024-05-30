@@ -10,6 +10,7 @@ html {
 }
 
 nav {
+  z-index: 9999;
   border-bottom: 5px solid black;
   vertical-align: middle;
   background-color: white;
@@ -298,6 +299,93 @@ hr.gradient-line {
   background-image: linear-gradient(90deg, aqua, rgb(0, 255, 0));
 }
 
+@keyframes scroll {
+  from {
+    left: 0px;
+  }
+
+  to {
+    left: -100000px;
+  }
+}
+
+.warning-container {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  position: relative;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-x: hidden;
+  z-index: -1;
+}
+
+.warning-container::after {
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  content: "";
+  background-image: linear-gradient(
+    to left,
+    red,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    transparent,
+    red
+  );
+}
+
+.warning-container::-webkit-scrollbar {
+  display: none;
+}
+
+.warning-message {
+  animation: scroll 1300s linear both;
+  position: relative;
+  z-index: -1;
+  font-size: 50px;
+  width: 100000px;
+  color: red;
+}
+
+.warning-message::placeholder {
+  display: none;
+}
+
 .arrow {
   top: 90px;
   right: 60px;
@@ -327,7 +415,7 @@ hr.gradient-line {
   background-image: url(../images/new-port.png);
 }
 
-.warning-pop-up::after {
+/*.warning-pop-up::after {
   content: "Page Is Under Construction, Expect Bugs And Instability";
   transition: all 200ms ease-in-out;
   position: absolute;
@@ -342,7 +430,7 @@ hr.gradient-line {
   opacity: 0;
   transform: translatey(-10px);
   filter: blur(2px);
-}
+}*/
 
 .warning-pop-up:hover::after {
   transform: translatey(0px);

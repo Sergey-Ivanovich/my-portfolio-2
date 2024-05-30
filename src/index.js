@@ -11,3 +11,7 @@ function hideArrow() {
 setInterval(bounce, 1050);
 
 bouncingArrowElement.addEventListener("click", hideArrow);
+
+alert(
+  "Portfolio is Officially outdated, new portfolio: https://noata-eric-portfolio.netlify.app/"
+);
